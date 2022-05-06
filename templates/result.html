@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    html{
+      height: 100%; 
+      overflow: hidden;
+    }
+
+    body{
+      background-image: url("/static/bg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      display: flex; 
+      justify-content: center; 
+      align-items: center;
+    }
+
+    p.groove{
+      border-style: groove;
+    }
+
+    .app_section{
+      background-color: white;
+      color: rgb(0, 0, 0);
+      font-family:'Garamond', serif;
+      font-size: 25px;
+      text-align: center;
+      width: 70%;
+      border-radius: 10px; 
+      border: 7px solid black;
+      height: 90%;
+    }
+
+    .btn-class{
+        background: rgb(35, 87, 122);
+        color: rgb(178, 223, 208);
+        font-family:'Garamond', serif;
+        font-size: 25px;
+        /* border-radius: 15px; */
+    }
+
+    .img_class{
+      margin-left: auto;
+      margin-right: auto;
+      border: 4px solid black;
+      border-radius: 25px;
+    }
+</style>
+
+<body>
+    <div class="app_section">
+      <img src="/static/logo.jpg" alt="logo" width="500" height="150">
+      <p> The uploaded leaf is of the following plant</p>
+
+      {% if clasi %}
+
+        <img src="{{img}}" alt=""  style="margin: 0px 80px 0px 0px;" height="250px" width="250px" class="img_class">
+        <img src="{{p_img}}" alt="" height="250px" width="250px" class="img_class"> <br><br>
+        <input type="button" value="{{clasi}}" style="width: 610px; height: 50px; background-color:black;border-color:black;" class="btn-class">
+
+      {% endif %}
+
+      <br> <br>
+      <a href="http://localhost:5000/" style="font-size: 23px;">Back</a>
+    </div>
+</body>
+
+</head>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    html{
+        height: 100%; 
+        overflow: hidden;
+    }
+
+    body{
+        background-image: url("/static/bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+    }
+
+    p.groove{
+        border-style: groove;
+    }
+
+    .app_section{
+        background-color: white;
+        color: rgb(0, 0, 0);
+        font-family:'Garamond', serif;
+        font-size: 25px;
+        text-align: center;
+        width: 80%;
+        border-radius: 10px; 
+        border: 7px solid black;
+        height: 60%;
+    }
+    
+    .btn-class{
+        background: rgb(35, 87, 122);
+        color: rgb(178, 223, 208);
+        font-family:'Garamond', serif;
+        font-size: 25px;
+    }
+</style>
+
+<body>
+    <div class="app_section">
+        <img src="/static\logo.jpg" alt="logo" width="500" height="150">
+        <p> To Identify any plant based on its leaf, upload image of the leaf from your device
+        </p>
+        <h3>UPLOAD IMAGE</h3>
+
+        <form action="/result" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" /> <br> <br>
+            <input type="submit" value="Upload" style="width: 610px; height: 50px; background-color:black;border-color:black;" class="btn-class">
+        </form>
+        
+    </div>
+</body>
+</head>
+</html>
