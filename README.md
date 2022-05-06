@@ -26,3 +26,13 @@ This code is executed on VScode
 2. Download the dataset from the link provided.
 3. Keep all the images of the dataset in the "**Leaves**" folder.
 4. Install all the dependencies.
+
+# Steps to Run this Project
+1. Open the project folder in vscode.
+2. Run "Plantifier.py" file.
+3. A terminal window will open and the backend processing will start.
+4. At the end, you will get to see some statements like "Debugger is active" or "Debugger is on" (It may take 25sec approx.)
+5. After you see this statement in your terminal window, open any browser and in the address bar type, "localhost:5000"
+6. Hit enter, and the website is up and running.
+<br>
+PS: It may take approx. 20sec to give the final output.
