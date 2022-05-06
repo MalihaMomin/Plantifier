@@ -61,7 +61,7 @@ def training_phase():
     clf.fit(X_train,y_train)
     y_pred = clf.predict(X_test)
     metrics.accuracy_score(y_test, y_pred)
-    # print(metrics.classification_report(y_test, y_pred))
+    print(metrics.classification_report(y_test, y_pred))
 
     ### Performing parameter tuning of the model
     parameters = [{'kernel': ['rbf'],
@@ -78,7 +78,7 @@ def training_phase():
         print("%0.3f (+/-%0.03f) for %r" % (mean, std * 2, params))
     y_pred_svm = training_phase.svm_clf.predict(X_test)
     metrics.accuracy_score(y_test, y_pred_svm)
-    # print(metrics.classification_report(y_test, y_pred_svm))
+    print(metrics.classification_report(y_test, y_pred_svm))
 
     ### Dimensionality Reduction using PCA
     pca = PCA()
@@ -215,7 +215,7 @@ def classify(f_name):
     features_of_img
 
     scaled_features = training_phase.sc_X.transform(features_of_img)
-    # print(scaled_features)
+    print(scaled_features)
     y_pred_mobile = training_phase.svm_clf.predict(scaled_features)
     y_pred_mobile[0]
 
