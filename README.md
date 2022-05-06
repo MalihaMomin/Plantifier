@@ -22,7 +22,7 @@ https://sourceforge.net/projects/flavia/files/Leaf%20Image%20Dataset/1.0/Leaves.
 This code is executed on VScode
 
 # Instructions
-1. Create 2 folders inside the "static" folder and name it as, "Leaves" and "prediction".
+1. Create 2 folders inside the "**static**" folder and name it as, "**Leaves**" and "**prediction**". (names are **case sensitive**)
 2. Download the dataset from the link provided.
-3. Keep all the images of the dataset in the "Leaves" folder.
+3. Keep all the images of the dataset in the "**Leaves**" folder.
 4. Install all the dependencies.
